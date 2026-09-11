@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PANI KITTIYO Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <main class="app">
+    <header>
+      <div class="logo">🚨 PANI KITTIYO?</div>
+      <div class="badge">AI • TOTALLY SCIENTIFIC*</div>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">KERALA'S MOST UNNECESSARY AI</p>
+      <h1>Is everything okay…<br><span>അല്ലെങ്കിൽ പണി കിട്ടിയോ?</span></h1>
+      <p class="sub">പറയൂ എന്തെങ്കിലും. Literally എന്തും. ബാക്കി AI നോക്കിക്കോളും. 😭</p>
+
+      <div class="controls">
+        <button id="voiceBtn" class="primary">🎙️ SAY SOMETHING</button>
+        <button id="cameraBtn" class="secondary">📷 SCAN FACE</button>
+        <button id="demoBtn" class="secondary">😂 DEMO MODE</button>
+      </div>
+
+      <div class="voice-box">
+        <div class="mini-title">WHAT YOU SAID</div>
+        <div id="transcript">“ഞാൻ ഫൈൻ ആണ്…”</div>
+      </div>
+    </section>
+
+    <section id="cameraPanel" class="camera-panel hidden">
+      <video id="video" autoplay playsinline></video>
+      <div class="camera-overlay">FACE SCAN ACTIVE</div>
+    </section>
+
+    <section class="analysis">
+      <div class="section-title">SYSTEM ANALYSIS</div>
+      <div id="logs" class="logs">
+        <div>Waiting for subject...</div>
+      </div>
+      <div class="progress"><div id="progressBar"></div></div>
+    </section>
+
+    <section id="report" class="report hidden">
+      <div class="section-title">📊 PANI ANALYSIS REPORT</div>
+      <div class="stats">
+        <div class="stat"><span>Situation Stability</span><b id="stability">8.2%</b></div>
+        <div class="stat"><span>Pani Probability</span><b id="pani">99.6%</b></div>
+        <div class="stat"><span>Escape Probability</span><b id="escape">2.1%</b></div>
+        <div class="stat"><span>Brain Function</span><b id="brain">47%</b></div>
+        <div class="stat"><span>Confidence in Survival</span><b id="survival">0.03%</b></div>
+        <div class="stat"><span>“I'm Fine” Level</span><b id="fine">FALSE</b></div>
+      </div>
+      <div id="malayalamResponse" class="malayalam-response"></div>
+    </section>
+
+    <section id="verdict" class="verdict hidden">
+      <p>🚨 FINAL VERDICT 🚨</p>
+      <h2 id="verdictText">PANI KITTI</h2>
+      <div class="verdict-grid">
+        <span>Threat Level</span><b id="threat">WHY DID YOU ASK?</b>
+        <span>Recommended Action</span><b id="action">RUN</b>
+        <span>Recommended Direction</span><b>UNKNOWN</b>
+        <span>Safe Location</span><b>NOT FOUND</b>
+      </div>
+      <div id="levelText" class="level"></div>
+    </section>
+
+    <section id="finalQuestion" class="final-question hidden">
+      <p>😈 ONE LAST QUESTION</p>
+      <button id="askFinalBtn">🎙️ എന്തിനാ പണി കിട്ടിയത്?</button>
+      <div id="finalVoiceStatus">AI waiting for your question...</div>
+    </section>
+
+    <section id="why" class="why hidden">
+      <p>WOULD YOU LIKE TO KNOW WHY PANI KITTI?</p>
+      <div id="whyLog">Consulting 47 imaginary experts...</div>
+      <h2 id="whyAnswer"></h2>
+    </section>
+
+    <footer>*For entertainment only. Face/voice analysis is completely fake. No actual danger, emotion or lie detection is performed.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
 
