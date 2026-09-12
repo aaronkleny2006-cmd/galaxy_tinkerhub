@@ -6,7 +6,7 @@
 ### Team Name: Galaxy
 
 ### Team Members
-- Team Lead:  - Aaron Kleny 
+- Team Lead:  - Aaron Kleny - Sahrdaya College of Engineering and Technology
 - Member 2: Agna Mariya Joseph - Sahrdaya College of Engineering and Technology
 
 ### Project Description
